@@ -1,0 +1,23 @@
+.editor_geo{
+}
+
+.editor_geo .map_area {
+}
+
+.editor_geo .map_area .map_pane {
+}
+
+.editor_geo .map_area .map_pane .mini_map_pane{
+  -fx-effect: dropshadow( gaussian, #00000090 , 8 , 0 , 0 , 5 )
+}
+
+.editor_geo .map_area .map_pane .mini_map_pane .mini_map_center{
+  -fx-image: url('Map_Cursor_01.png');
+  -fx-effect: dropshadow( gaussian, #00000090 , 8 , 0 , 0 , 5 )
+
+}
+.editor_geo .map_area .info_area .info{
+  -fx-font-size: 10px;
+  -fx-text-fill: black;
+  -fx-background-color: lightgray;
+}

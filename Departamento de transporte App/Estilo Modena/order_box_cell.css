@@ -1,0 +1,94 @@
+.order_box_cell{
+    -fx-background-color: -fx-control-inner-background;
+}
+.order_box_cell:odd{
+    -fx-background-color: derive(-fx-control-inner-background,	-4%);
+}
+
+.order_box_cell .lower_separator{
+	-fx-background-color:
+		linear-gradient(to bottom,
+				-fx-color 0%,
+				-fx-color 4%,
+				#00000000 50%,
+				-fx-color 60%,
+				-fx-color 100%);
+}
+.order_box_cell .upper_separator{
+	-fx-background-color:
+		linear-gradient(to bottom,
+				-fx-color 0%,
+				-fx-color 4%,
+				#00000000 50%,
+				-fx-color 60%,
+				-fx-color 100%);
+}
+.order_box_cell .grid_pane{
+	-fx-background-color: transparent;
+}
+.order_box_cell .grid_pane .code{
+/*
+	-fx-background-color: blue;
+	*/
+}
+.order_box_cell .grid_pane .name{
+/*
+	-fx-background-color: purple;
+	*/
+}
+.order_box_cell .grid_pane .longitude{
+/*
+	-fx-background-color: green;
+	*/
+}
+.order_box_cell .grid_pane .latitude{
+/*
+	-fx-background-color: orange;
+	*/
+}
+.order_box_cell .grid_pane .delete{
+	-fx-content-display: graphic-only;
+    -fx-background-size: auto;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-label-padding: 0px;
+    -fx-padding: 0 2 0 2;
+	-fx-graphic: url('delete_01.png');    
+}
+.order_box_cell .grid_pane .delete:pressed{
+	-fx-content-display: graphic-only;
+    -fx-background-size: auto;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-label-padding: 0px;
+    -fx-padding: 1 2 1 2;
+	-fx-graphic: url('delete_pressed_01.png');    
+}
+.order_box_cell .ico:warehouse{
+    -fx-border-radius: 5px 0px 0px 5px;
+    -fx-background-radius: 5px 0px 0px 5px;
+    -fx-content-display: graphic-only;
+    -fx-image: url('Pin_warehouse_01.png');
+    -fx-background-size: 10;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+.order_box_cell .ico:store{
+    -fx-border-radius: 5px 0px 0px 5px;
+    -fx-background-radius: 5px 0px 0px 5px;
+    -fx-content-display: graphic-only;
+    -fx-image: url('Pin_store_01.png');
+    -fx-background-size: 12;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+.order_box_cell .ico:poi{
+    -fx-border-radius: 5px 0px 0px 5px;
+    -fx-background-radius: 5px 0px 0px 5px;
+    -fx-content-display: graphic-only;
+    -fx-image: url('Map_Cursor_01.png');
+    -fx-background-size: 14;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+

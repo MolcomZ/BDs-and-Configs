@@ -1,0 +1,298 @@
+.tamano-table-cell {
+    -fx-background-color: #DDDDDD20;
+    -fx-content-display: graphic-only;
+    -fx-font-size: 8;
+}
+.tamano-table-cell:pequeno {
+    -fx-background-color: -fx-pequeno-50;
+    -fx-content-display: graphic-only;
+}
+.tamano-table-cell:mediano {
+    -fx-background-color: -fx-mediano-50;
+    -fx-content-display: graphic-only;
+}
+.tamano-table-cell:grande {
+    -fx-background-color: -fx-grande-50;
+    -fx-content-display: graphic-only;
+}
+.tamano-table-cell:trailer {
+    -fx-background-color: -fx-trailer-50;
+    -fx-content-display: graphic-only;
+}
+.tamano-table-cell .minilabel,
+.tamano-table-cell .minilabel:pequeno,
+.tamano-table-cell .minilabel:mediano,
+.tamano-table-cell .minilabel:grande,
+.tamano-table-cell .minilabel:trailer {
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-label-padding: 2px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+.tamano-table-cell .minilabel:pequeno {
+    -fx-border-color: derive(-fx-pequeno,-80%);
+    -fx-background-color: -fx-pequeno;
+}
+.tamano-table-cell .minilabel:mediano {
+    -fx-border-color: derive(-fx-mediano,-80%);
+    -fx-background-color: -fx-mediano;
+}
+.tamano-table-cell .minilabel:grande {
+    -fx-border-color: derive(-fx-grande,-80%);
+    -fx-background-color: -fx-grande;
+}
+.tamano-table-cell .minilabel:trailer {
+    -fx-border-color: derive(-fx-trailer,-80%);
+    -fx-background-color: -fx-trailer;
+}
+
+
+
+
+.almacen-table-cell {
+    -fx-background-color: #DDDDDD20;
+    -fx-content-display: graphic-only;
+    -fx-font-size: 8;
+}
+
+.almacen-table-cell:carne {
+-fx-background-color: -fx-carne-50;
+-fx-content-display: graphic-only;
+}
+
+.almacen-table-cell:fresco {
+-fx-background-color: -fx-fresco-50;
+-fx-content-display: graphic-only;
+}
+    .almacen-table-cell:seco {
+        -fx-background-color: -fx-seco-50;
+        -fx-content-display: graphic-only;
+    }
+    .almacen-table-cell:pescado {
+        -fx-background-color: -fx-pescado-50;
+        -fx-content-display: graphic-only;
+    }
+    .almacen-table-cell:congelado {
+        -fx-background-color: -fx-congelado-50;
+        -fx-content-display: graphic-only;
+    }
+    .almacen-table-cell:fruta {
+        -fx-background-color: -fx-fruta-50;
+        -fx-content-display: graphic-only;
+    }
+
+    .almacen-table-cell .minilabel,
+    .almacen-table-cell .minilabel:carne,
+    .almacen-table-cell .minilabel:fresco,
+    .almacen-table-cell .minilabel:seco,
+    .almacen-table-cell .minilabel:congelado,
+    .almacen-table-cell .minilabel:pescado,
+    .almacen-table-cell .minilabel:fruta {
+        -fx-border-radius: 3px;
+        -fx-background-radius: 3px;
+        -fx-label-padding: 2px;
+        -fx-alignment: center;
+        -fx-text-alignment: center;
+    }
+
+.almacen-table-cell .minilabel {
+-fx-border-color: derive(-fx-orden_no_ruteada,-40%);
+-fx-background-color: -fx-orden_no_ruteada;
+}
+
+.almacen-table-cell .minilabel:carne {
+    -fx-border-color: derive(-fx-carne,-80%);
+    -fx-background-color: -fx-carne;
+}
+.almacen-table-cell .minilabel:fresco {
+    -fx-border-color: derive(-fx-fresco,-80%);
+    -fx-background-color: -fx-fresco;
+}
+.almacen-table-cell .minilabel:seco {
+    -fx-border-color: derive(-fx-seco,-80%);
+    -fx-background-color: -fx-seco;
+}
+    .almacen-table-cell .minilabel:pescado {
+        -fx-border-color: derive(-fx-pescado,-80%);
+        -fx-background-color: -fx-pescado;
+    }
+    .almacen-table-cell .minilabel:congelado {
+        -fx-border-color: derive(-fx-congelado,-80%);
+        -fx-background-color: -fx-congelado;
+    }
+    .almacen-table-cell .minilabel:fruta {
+        -fx-border-color: derive(-fx-fruta,-80%);
+        -fx-background-color: -fx-fruta;
+    }
+
+
+
+
+
+
+
+.empresa-table-cell {
+    -fx-background-color: #DDDDDD20;
+    -fx-content-display: graphic-only;
+    -fx-font-size: 8;
+}
+.empresa-table-cell:pentalogis {
+    -fx-background-color: -fx-pentalogis-50;
+    -fx-content-display: graphic-only;
+}
+.empresa-table-cell:transvelilla {
+    -fx-background-color: -fx-transvelilla-50;
+    -fx-content-display: graphic-only;
+}
+    .empresa-table-cell:marquezroman {
+        -fx-background-color: -fx-marquezroman-50;
+        -fx-content-display: graphic-only;
+    }
+    .empresa-table-cell:romarcobal {
+        -fx-background-color: -fx-romarcobal-50;
+        -fx-content-display: graphic-only;
+    }
+    .empresa-table-cell:jorbana {
+        -fx-background-color: -fx-jorbana-50;
+        -fx-content-display: graphic-only;
+    }
+    .empresa-table-cell:diepersa {
+        -fx-background-color: -fx-diepersa-50;
+        -fx-content-display: graphic-only;
+    }
+    .empresa-table-cell:dediebra {
+        -fx-background-color: -fx-dediebra-50;
+        -fx-content-display: graphic-only;
+    }
+    .empresa-table-cell:morata {
+        -fx-background-color: -fx-morata-50;
+        -fx-content-display: graphic-only;
+    }
+.empresa-table-cell .minilabel,
+.empresa-table-cell .minilabel:pentalogis,
+.empresa-table-cell .minilabel:transvelilla,
+.empresa-table-cell .minilabel:marquezroman,
+.empresa-table-cell .minilabel:romarcobal,
+.empresa-table-cell .minilabel:jorbana,
+.empresa-table-cell .minilabel:diepersa,
+.empresa-table-cell .minilabel:dediebra,
+.empresa-table-cell .minilabel:morata {
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-label-padding: 2px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+.empresa-table-cell .minilabel {
+    -fx-border-color: derive(-fx-orden_no_ruteada,-40%);
+    -fx-background-color: -fx-orden_no_ruteada;
+}
+.empresa-table-cell .minilabel:pentalogis {
+    -fx-border-color: derive(-fx-pentalogis,-80%);
+    -fx-background-color: -fx-pentalogis;
+}
+.empresa-table-cell .minilabel:transvelilla {
+    -fx-border-color: derive(-fx-transvelilla,-80%);
+    -fx-background-color: -fx-transvelilla;
+}
+.empresa-table-cell .minilabel:marquezroman {
+    -fx-border-color: derive(-fx-marquezroman,-80%);
+    -fx-background-color: -fx-marquezroman;
+}
+.empresa-table-cell .minilabel:romarcobal {
+    -fx-border-color: derive(-fx-romarcobal,-80%);
+    -fx-background-color: -fx-romarcobal;
+}
+.empresa-table-cell .minilabel:jorbana {
+    -fx-border-color: derive(-fx-jorbana,-80%);
+    -fx-background-color: -fx-jorbana;
+}
+.empresa-table-cell .minilabel:diepersa {
+    -fx-border-color: derive(-fx-diepersa,-80%);
+    -fx-background-color: -fx-diepersa;
+}
+.empresa-table-cell .minilabel:dediebra {
+    -fx-border-color: derive(-fx-dediebra,-80%);
+    -fx-background-color: -fx-dediebra;
+}
+.empresa-table-cell .minilabel:morata {
+    -fx-border-color: derive(-fx-morata,-80%);
+    -fx-background-color: -fx-morata;
+}
+
+
+
+
+
+.ruta-table-cell {
+    -fx-background-color: #DDDDDD20;
+    -fx-content-display: graphic-only;
+}
+
+    .ruta-table-cell:ruteada {
+        -fx-background-color: #60CC6020;
+        -fx-content-display: graphic-only;
+    }
+
+    .ruta-table-cell .minilabel,
+    .ruta-table-cell .minilabel:ruteada {
+        -fx-border-radius: 3px;
+        -fx-background-radius: 3px;
+        -fx-label-padding: 2px;
+        -fx-alignment: center;
+        -fx-text-alignment: center;
+    }
+
+    .ruta-table-cell .minilabel {
+        -fx-border-color: derive(-fx-orden_no_ruteada,-40%);
+        -fx-background-color: -fx-orden_no_ruteada;
+    }
+
+        .ruta-table-cell .minilabel:ruteada {
+            -fx-border-color: derive(-fx-orden_ruteada,-80%);
+            -fx-background-color: -fx-orden_ruteada;
+        }
+
+
+
+
+
+
+
+
+#cell-orden{
+    -fx-background-color: yellow;
+}
+#cell-orden:ruteada,
+#cell-orden:no_rutedad,
+#cell-orden:expedida{
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+}
+#cell-orden:no_ruteada {
+    -fx-border-color: derive(-fx-orden_no_ruteada, 50%);
+    -fx-background-color: -fx-orden_no_ruteada;
+}
+#cell-orden:ruteada {
+    -fx-border-color: derive(-fx-orden_ruteada, 50%);
+    -fx-background-color: -fx-orden_ruteada;
+}
+#cell-orden:expedida {
+    -fx-border-color: derive(-fx-orden_expedida, 50%);
+    -fx-background-color: -fx-orden_expedida;
+}
+
+
+
+
+
+.punto-geo-cell:tienda{
+        -fx-border-radius: 3px;
+        -fx-background-radius: 3px;
+        -fx-label-padding: 2px;
+        -fx-alignment: center;
+        -fx-text-alignment: center;
+   
+}

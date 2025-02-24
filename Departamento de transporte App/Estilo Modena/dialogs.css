@@ -1,0 +1,6 @@
+.dialog-pane > .content.label {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+    -fx-font-size: 15.0px;
+}

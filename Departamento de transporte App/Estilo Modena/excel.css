@@ -1,0 +1,11 @@
+.excel-range-cell {
+}
+    .excel-range-cell:sheet {
+        -fx-graphic: url('Excel_sheet_01.png');
+    }
+    .excel-range-cell:table {
+        -fx-graphic: url('DB_Delete_01.png');
+    }
+    .excel-range-cell:range {
+        -fx-graphic: url('DB_Edit_01.png');
+    }

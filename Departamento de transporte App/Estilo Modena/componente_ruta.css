@@ -1,0 +1,132 @@
+.componente-ruta {
+    -fx-border-color: -fx-dark-text-color;
+    -fx-background-color: -fx-base;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-text-fill: black;
+}
+    .componente-ruta .table {
+        -fx-border-color: derive(grey,20%);
+        -fx-border-size: 1;
+        -fx-text-fill: black;
+    }
+
+    .componente-ruta .row {
+        -fx-background-color: -fx-control-inner-background;
+        -fx-border-color: transparent transparent derive(-fx-color,5%) transparent;
+        -fx-text-fill: black;
+    }
+        .componente-ruta .row:odd {
+            -fx-background-color: -fx-control-inner-background-alt;
+            -fx-text-fill: black;
+        }
+    .componente-ruta .isolated-cell {
+        -fx-border-color: derive(grey,20%);
+        -fx-border-radius: 4;
+        -fx-background-color: -fx-control-inner-background;
+        -fx-background-radius: 4;
+        -fx-border-color: derive(-fx-base,-20%);
+        -fx-border-size: 2;
+        -fx-padding: 1;
+        -fx-text-fill: black;
+    }
+    .componente-ruta .cell {
+        -fx-border-color: derive(grey,20%);
+        -fx-background-color: red; /*-fx-control-inner-background;*/
+        -fx-background-color: transparent;
+        -fx-border-color: transparent derive(-fx-color,5%) transparent transparent;
+        -fx-text-fill: black;
+        -fx-padding: 1;
+    }
+    .componente-ruta .notacell {
+        -fx-border-color: transparent derive(-fx-color,5%) derive(-fx-color,5%) transparent;
+        -fx-background-color: #ffda98;
+        -fx-padding: 0;
+        -fx-font-size: 8;
+        -fx-font-style: italic;
+        -fx-text-fill: black;
+    }
+.componente-ruta #cell_pentalogis {
+    -fx-border-color: derive(-fx-pentalogis,-50%);
+    -fx-background-color: derive(-fx-pentalogis,15%);
+    -fx-padding: 1;
+}
+.componente-ruta #cell_transvelilla {
+    -fx-border-color: derive(-fx-transvelilla,-50%);
+    -fx-background-color: derive(-fx-transvelilla,15%);
+    -fx-padding: 1;
+}
+
+.componente-ruta #label_seco,
+.componente-ruta #label_carne,
+.componente-ruta #label_fresco{
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-border-color: black;
+    -fx-background-radius: 3px;
+}
+    .componente-ruta #label_seco {
+        -fx-background-color: red;/*-fx-seco;*/
+    }
+    .componente-ruta #label_carne {
+        -fx-background-color: -fx-carne;
+    }
+    .componente-ruta #label_fresco {
+        -fx-background-color: -fx-fresco;
+    }
+
+
+
+
+.componente-ruta .title_cell {
+    -fx-font-size: 8;
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0 4 0 4; /*0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-font-weight: bold;
+}
+
+.componente-ruta .grid {
+        /*-fx-background: -fx-control-inner-background;*/
+        /*-fx-background-color: -fx-table-cell-border-color, -fx-background;*/
+        -fx-background-insets: 0, 0 0 1 0;
+        -fx-padding: 0;
+        -fx-text-fill: -fx-text-background-color;
+        -fx-border-width: 1;
+        -fx-border-color: black;
+}
+    .componente-ruta .grid .title {
+        -fx-font-size: 8px;
+        -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+        -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+        /*-fx-background-radius: 3px, 3px, 2px, 1px;*/
+        -fx-padding: 2 6 2 6; /* 4 8 4 8 */
+        -fx-text-fill: -fx-text-base-color;
+        -fx-alignment: CENTER;
+        -fx-content-display: LEFT;
+        -fx-border-color: transparent transparent derive(grey,20%) transparent;
+        -fx-border-width: 1;
+    }
+    .componente-ruta .grid .cell {
+        -fx-background: -fx-control-inner-background;
+        -fx-background-color: -fx-background;
+        -fx-text-fill: -fx-text-background-color;
+        -fx-padding: 0.166667em; /* 2px, plus border adds 1px */
+        -fx-border-color: transparent derive(grey, 20%) derive(grey, 20%) transparent;
+        -fx-grid-cell-border-color: transparent;
+        -fx-border-width: 1;
+        -fx-text-fill: -fx-text-background-color;
+    }
+        .componente-ruta .grid .cell:odd {
+            -fx-background: -fx-control-inner-background-alt;
+            -fx-background-color: -fx-background;
+            -fx-text-fill: -fx-text-background-color;
+            -fx-padding: 0.166667em; /* 2px, plus border adds 1px */
+            -fx-border-color: transparent derive(grey, 40%) derive(grey, 40%) transparent;
+            -fx-border-width: 1;
+            -fx-text-fill: -fx-text-background-color;
+        }

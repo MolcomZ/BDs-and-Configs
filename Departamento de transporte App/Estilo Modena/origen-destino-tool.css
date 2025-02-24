@@ -1,0 +1,38 @@
+.origen-destino{
+}
+.origen-destino .toggle-button{
+    -fx-border-radius: 5px 0px 0px 5px;
+    -fx-background-radius: 5px 0px 0px 5px;
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('Off_Toggle.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+.origen-destino .toggle-button:on{
+    -fx-border-radius: 5px 0px 0px 5px;
+    -fx-background-radius: 5px 0px 0px 5px;
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('On_Toggle.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+.origen-destino .toggle-button:off{
+    -fx-border-radius: 5px 0px 0px 5px;
+    -fx-background-radius: 5px 0px 0px 5px;
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('Off_Toggle.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+.origen-destino .options-button{
+    -fx-border-radius: 0px 5px 5px 0px;
+    -fx-background-radius: 0px 5px 5px 0px;
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('Config_01.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}

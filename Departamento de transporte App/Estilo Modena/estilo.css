@@ -1,0 +1,331 @@
+/*@import "dialogs.css"; INHABILITADO TEMPORALMENTE HASTA DISEÑAR DIALOGOS*/
+@import "charts.css";
+@import "componente_ruta.css";
+@import "table_views.css";
+@import "ordenes.css";
+@import "excel.css";
+@import "editor_geo.css";
+@import "origen-destino-tool.css";
+@import "order_box_cell.css";
+
+.root {
+    -fx-base: #ececec;
+    -fx-control-inner-background-alt-mz=green; /*derive(-fx-control-inner-background,-80%);*/
+    /*COLORES ESTADOS DE RUTA*/
+    -fx-orden_ruteada: #60CC60;
+    -fx-orden_no_ruteada: #DDDDDD;
+    -fx-orden_expedida: #20CC20;
+    /*COLORES ALMACENES*/
+    -fx-pescado: #95fcffBB;
+    -fx-pescado-50: #95fcff40;
+    -fx-congelado: #90ffffBB;
+    -fx-congelado-50: #90ffff40;
+    -fx-carne: #bb3838BB;
+    -fx-carne-50: #bb383840;
+    -fx-fresco: #a05363BB;
+    -fx-fresco-50: #a0536340;
+    -fx-seco: #d3d035BB;
+    -fx-seco-50: #d3d03540;
+    -fx-fruta: #37946cBB;
+    -fx-fruta-50: #37946c40;
+    /*-fx-base: #888598;*/
+    /*COLORES TAMAÑOS*/
+    -fx-pequeno: #555555BB;
+    -fx-pequeno-50: #55555540;
+    -fx-mediano: #888888BB;
+    -fx-mediano-50: #88888840;
+    -fx-grande: #bbbbbbBB;
+    -fx-grande-50: #bbbbbb40;
+    -fx-trailer: #EEEEEEBB;
+    -fx-trailer-50: #EEEEEE40;
+
+    -fx-pentalogis: #d77bbaBB;
+    -fx-pentalogis-50: #d77bba40;
+    -fx-transvelilla: #cbdbfcBB;
+    -fx-transvelilla-50: #cbdbfc40;
+    -fx-marquezroman: #37946cBB;
+    -fx-marquezroman-50: #37946c40;
+    -fx-romarcobal: #4b692fBB;
+    -fx-romarcobal-50: #4b692f40;
+    -fx-diepersa: #eec39aBB;
+    -fx-diepersa-50: #eec39a40;
+    -fx-dediebra: #df7126BB;
+    -fx-dediebra-50: #df712640;
+    -fx-jorbana: #d95763BB;
+    -fx-jorbana-50: #d9576340;
+    -fx-morata: #ac3232BB;
+    -fx-morata-50: #ac323240;
+    -fx-font-size: 11px;
+    -fx-body-color-base-mz: derive(-fx-base, -10%);
+}
+#titulo {
+}
+
+#fondo {
+    -fx-background-color: #000000;
+}
+
+Button {
+}
+
+#autor {
+    -fx-font-family: "Hervetica";
+    -fx-text-fill: #FFFF00;
+    -fx-font-size: 10px;
+}
+
+.button{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+#table_edit {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('table_edit_01.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 0 2 0 2;
+}
+#db_add {
+    -fx-content-display:graphic-only;
+    -fx-graphic: url('DB_Add_02.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+#db_edit {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('DB_Edit_01.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+#db_delete {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('DB_Delete_02.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+#db_refresh {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('DB_Refresh_01.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+#config {
+    -fx-border-radius: 0px 5px 5px 0px;
+    -fx-background-radius: 0px 5px 5px 0px;
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('Config_01.png');
+    -fx-background-size: auto;
+    -fx-label-padding: 0px;
+    -fx-padding: 3px;
+}
+#cell_pentalogis:even {
+    -fx-background-color: derive(-fx-pentalogis,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-pentalogis,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_pentalogis:odd {
+    -fx-background-color: -fx-pentalogis;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-pentalogis,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_transvelilla:even {
+    -fx-background-color: derive(-fx-transvelilla,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-transvelilla,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-transvelilla,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_transvelilla:odd {
+    -fx-background-color: -fx-transvelilla;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-transvelilla,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_dediebra:even {
+    -fx-background-color: derive(-fx-dediebra,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-dediebra,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-dediebra,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#cell_dediebra:odd {
+    -fx-background-color: -fx-dediebra;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-dediebra,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_diepersa:even {
+    -fx-background-color: derive(-fx-diepersa,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-diepersa,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-diepersa,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#cell_diepersa:odd {
+    -fx-background-color: -fx-diepersa;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-diepersa,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_jorbana:even {
+    -fx-background-color: derive(-fx-jorbana,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-jorbana,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-jorbana,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#cell_jorbana:odd {
+    -fx-background-color: -fx-jorbana;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-jorbana,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_marquezroman:even {
+    -fx-background-color: derive(-fx-marquezroman,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-marquezroman,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-marquezroman,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#cell_marquezroman:odd {
+    -fx-background-color: -fx-marquezroman;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-marquezroman,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_romarcobal:even {
+    -fx-background-color: derive(-fx-romarcobal,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-romarcobal,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-romarcobal,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#cell_romarcobal:odd {
+    -fx-background-color: -fx-romarcobal;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-romarcobal,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#cell_morata:even {
+    -fx-background-color: derive(-fx-morata,15%);
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-morata,-30%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-morata,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#cell_morata:odd {
+    -fx-background-color: -fx-morata;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: derive(-fx-morata,-45%);
+    -fx-border-radius: 5px;
+    -fx-text-fill: derive(-fx-pentalogis,-85%);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+.table-row-cell{
+    -fx-cell-size: 22px;
+}
+.stats-pane{
+    -fx-background-color: red;
+    -fx-text-fill: yellow;
+}
+.stats-pane .title1{
+    -fx-text-size: 10;
+    -fx-text-style: bold;
+    -fx-background-color: orange;
+    -fx-padding: 5;
+}
+
+.stats-pane .title2 {
+    -fx-text-size: 10;
+    -fx-text-style: plain;
+    -fx-background-color: orange;
+    -fx-padding: 5;
+}
+
+.stats-pane .data {
+    -fx-text-size: 10;
+    -fx-text-style: plain;
+    -fx-background-color: orange;
+    -fx-padding: 5;
+}
+
+
+
+.date-picker > .arrow-button > .arrow {
+    -fx-shape: "M 8.52832,16.826 C 8.53464,17.7132 8.01843,18.5166 7.22106,18.8607 6.42369,19.2047 5.50274,19.0213 4.88882,18.3962 4.27491,17.7712 4.08935,16.828 4.41891,16.0077 4.74847,15.1873 5.52803,14.652 6.39307,14.652 c 0.56424,-0.0021 1.10618,0.2257 1.50662,0.6334 0.40044,0.4077 0.62656,0.9619 0.62863,1.5406 z m 18.7015,16.826 c 0.0063,0.8872 -0.5099,1.6906 -1.3073,2.0347 -0.7973,0.344 -1.7183,0.1606 -2.3322,-0.4645 -0.6139,-0.625 -0.7995,-1.5682 -0.4699,-2.3885 0.3295,-0.8204 1.1091,-1.3557 1.9741,-1.3557 0.5643,-0.0021 1.1062,0.2257 1.5066,0.6334 0.4005,0.4077 0.6266,0.9619 0.6287,1.5406 z m 14.1804,17.576 c 0.4142,0 0.75,-0.3357 0.75,-0.75 0,-0.4142 -0.3358,-0.75 -0.75,-0.75 z m -5.655,-1.5 c -0.41421,0 -0.75,0.3358 -0.75,0.75 0,0.4143 0.33579,0.75 0.75,0.75 z m 4.905,0.75 c 0,0.4143 0.3358,0.75 0.75,0.75 0.4142,0 0.75,-0.3357 0.75,-0.75 z m 1.5,-5.267 c 0,-0.4142 -0.3358,-0.75 -0.75,-0.75 -0.4142,0 -0.75,0.3358 -0.75,0.75 z m -0.75,4.517 c -0.4142,0 -0.75,0.3358 -0.75,0.75 0,0.4143 0.3358,0.75 0.75,0.75 z m 0.2496,1.5 c 0.4142,0 0.75,-0.3357 0.75,-0.75 0,-0.4142 -0.3358,-0.75 -0.75,-0.75 z m 4.2672,-1.4999 c -0.4142,0.0018 -0.7485,0.339 -0.7467,0.7532 0.0018,0.4142 0.3391,0.7486 0.7533,0.7467 z m 2.2653,-1.5911 0.75,-0.0034 c -2e-4,-0.0432 -0.0041,-0.0862 -0.0117,-0.1287 z m 0.2147,-3.0581 c -0.073,-0.4077 -0.4626,-0.6791 -0.8704,-0.6061 -0.4077,0.0729 -0.6791,0.4626 -0.6061,0.8704 z M 14.1794,6.12705 c -0.4142,0 -0.75,0.33578 -0.75,0.75 0,0.41421 0.3358,0.75 0.75,0.75 z m 3.5793,0.75 v 0.75 c 0.005,0 0.0101,-5e-5 0.0152,-1.6e-4 z m 1.6196,0.6735 0.5395,-0.52104 v 0 z M 20.0197,9.21805 19.27,9.19669 c -0.0015,0.05135 0.0023,0.10271 0.0114,0.15327 z M 19.6996,11.691 c 0.0729,0.4077 0.4625,0.6792 0.8703,0.6064 0.4077,-0.0729 0.6792,-0.4625 0.6064,-0.8703 z M 14.9284,6.87705 c 0,-0.41422 -0.3357,-0.75 -0.75,-0.75 -0.4142,0 -0.75,0.33578 -0.75,0.75 z m -1.5,4.68195 c 0,0.4143 0.3358,0.75 0.75,0.75 0.4143,0 0.75,-0.3357 0.75,-0.75 z m 0,-4.68195 c 0,0.41421 0.3358,0.75 0.75,0.75 0.4143,0 0.75,-0.33579 0.75,-0.75 z m 0.75,-0.8 h 0.7501 l -10e-5,-0.00538 z m -1.0647,-1.077 v 0.75001 l 0.005,-3e-5 z m -9.60858,0 -0.00712,0.75 H 3.50512 Z M 2.75423,5.31075 2.22207,4.78225 v 0 z M 2.4375,6.07505 1.6875,6.06834 v 0.00671 z m 0,9.67495 H 1.68747 l 6e-5,0.0068 z m 0.31673,0.7643 0.53215,-0.5285 v 0 z m 0.75089,0.3107 v -0.75 L 3.498,16.0751 Z m 0.75271,0.75 c 0.41421,0 0.75,-0.3357 0.75,-0.75 0,-0.4142 -0.33579,-0.75 -0.75,-0.75 z m 9.92257,-6.766 c -0.4142,0 -0.75,0.3358 -0.75,0.75 0,0.4143 0.3358,0.75 0.75,0.75 z m 6.2595,1.5 c 0.4142,0 0.75,-0.3357 0.75,-0.75 0,-0.4142 -0.3358,-0.75 -0.75,-0.75 z m -6.2595,3.767 h -5.655 v 1.5 h 5.655 z m 0.75,0.75 v -5.267 h -1.5 v 5.267 z m -0.75,0.75 H 14.43 v -1.5 h -0.2496 z m 4.5234,0 c 0.8079,-0.0035 1.5772,-0.3363 2.1399,-0.9187 L 19.765,15.615 c -0.2858,0.2958 -0.6703,0.4593 -1.0678,0.4611 z m 2.1399,-0.9187 c 0.5621,-0.5817 0.8725,-1.3647 0.8688,-2.1757 l -1.5,0.0069 c 0.002,0.4252 -0.1611,0.8301 -0.4475,1.1265 z m 0.8571,-2.3044 -0.5236,-2.926 -1.4765,0.2643 0.5235,2.926 z M 14.1794,7.62705 h 3.5793 v -1.5 h -3.5793 z m 3.5945,-1.6e-4 c 0.3952,-0.00801 0.7805,0.15021 1.065,0.44469 L 19.9178,7.02951 C 19.3477,6.43922 18.5622,6.1106 17.7434,6.1272 Z m 1.065,0.44469 C 19.124,8.36679 19.282,8.77315 19.27,9.19669 L 20.7694,9.2394 C 20.7928,8.41808 20.4872,7.61907 19.9178,7.02951 Z M 19.2814,9.34996 19.6996,11.691 21.1763,11.4271 20.758,9.08613 Z M 13.4284,6.87705 V 11.559 h 1.5 V 6.87705 Z m 1.5,0 v -0.8 h -1.5 v 0.8 z m 0,-0.80538 C 14.9213,5.07677 14.1245,4.24331 13.1088,4.25006 l 0.0099,1.49997 c 0.1521,-0.00101 0.3083,0.1296 0.3098,0.33239 z M 13.1137,4.25005 H 3.50512 v 1.5 h 9.60858 z m -9.60145,3e-5 C 3.02654,4.24547 2.5628,4.43917 2.22207,4.78225 l 1.06431,1.057 C 3.3461,5.77912 3.42257,5.7493 3.498,5.75001 Z M 2.22207,4.78225 C 1.88199,5.12468 1.69183,5.58769 1.68753,6.06834 L 3.18747,6.08175 C 3.18832,5.98687 3.22602,5.90003 3.28638,5.83925 Z M 1.6875,6.07505 V 15.75 h 1.5 V 6.07505 Z m 3e-5,9.68175 c 0.0043,0.4806 0.19446,0.9436 0.53454,1.286 l 1.06431,-1.057 C 3.22602,15.9251 3.18832,15.8382 3.18747,15.7433 Z m 0.53454,1.286 c 0.34073,0.3431 0.80447,0.5368 1.29018,0.5322 L 3.498,16.0751 C 3.42257,16.0758 3.3461,16.046 3.28638,15.9858 Z m 1.28305,0.5322 h 0.75271 v -1.5 H 3.50512 Z M 14.1804,12.309 h 6.2595 v -1.5 h -6.2595 z";
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-scale-shape: true;
+}

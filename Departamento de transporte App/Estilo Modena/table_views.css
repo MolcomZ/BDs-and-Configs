@@ -1,0 +1,9 @@
+﻿#row{
+    /*DEBE EXISTIR PARA SOBRE ESCRIBIR LOS ESTADOS POR DEFECTO DEL ROW*/
+}
+#row:ruteada{
+    -fx-background-color: #88CC8870;
+}
+#row:ruteadaodd{
+    -fx-background-color: #66CC7770;
+}

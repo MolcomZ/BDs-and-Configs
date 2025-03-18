@@ -1,4 +1,4 @@
-/*@import "dialogs.css"; INHABILITADO TEMPORALMENTE HASTA DISEÑAR DIALOGOS*/
+/*@import "dialogs.css"; INHABILITADO TEMPORALMENTE HASTA DISEï¿½AR DIALOGOS*/
 @import "charts.css";
 @import "componente_ruta.css";
 @import "table_views.css";
@@ -7,10 +7,11 @@
 @import "editor_geo.css";
 @import "origen-destino-tool.css";
 @import "order_box_cell.css";
+@import "popups.css"
 
 .root {
     -fx-base: #ececec;
-    -fx-control-inner-background-alt-mz=green; /*derive(-fx-control-inner-background,-80%);*/
+/*    -fx-control-inner-background-alt-mz=green; derive(-fx-control-inner-background,-80%);*/
     /*COLORES ESTADOS DE RUTA*/
     -fx-orden_ruteada: #60CC60;
     -fx-orden_no_ruteada: #DDDDDD;
@@ -29,7 +30,7 @@
     -fx-fruta: #37946cBB;
     -fx-fruta-50: #37946c40;
     /*-fx-base: #888598;*/
-    /*COLORES TAMAÑOS*/
+    /*COLORES TAMAï¿½OS*/
     -fx-pequeno: #555555BB;
     -fx-pequeno-50: #55555540;
     -fx-mediano: #888888BB;
@@ -328,4 +329,16 @@ Button {
     -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
     -fx-background-insets: 1 0 -1 0, 0;
     -fx-scale-shape: true;
+}
+.pin20{
+    -fx-content-display:graphic-only;
+    -fx-graphic: url('Store_001_20px.png');
+    -fx-background-size: auto;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 6, 0.5, 2.0, 3.0);
+}
+.pin32{
+    -fx-content-display:graphic-only;
+    -fx-graphic: url('Store_001_32px.png');
+    -fx-background-size: auto;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 6, 0.5, 2.0, 3.0);
 }

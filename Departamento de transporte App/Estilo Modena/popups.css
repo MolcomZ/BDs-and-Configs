@@ -1,0 +1,44 @@
+.root{
+  -fx-zzzzz: #FF2020;
+}
+.popup{
+  -fx-background-color: derive(-fx-base,-80%);
+  -fx-background-radius: 5px;
+  -fx-border-radius: 5px;
+  -fx-border-color: derive(-fx-base,-90%);
+}
+.popup .toolbar{
+  -fx-background-color: derive(-fx-base,-70%);
+  -fx-border-color: derive(-fx-base,-80%);
+}
+.popup .title{
+  -fx-text-fill: #2080FF;
+  -fx-font-weight: bolder;
+}
+.popup .data{
+  -fx-text-fill: WHITE;
+  -fx-text-style: oblique;
+}
+.popup .data-alt{
+  -fx-text-fill: WHITE;
+  //-fx-text-style: italic;
+  -fx-font-size: 9px;
+}
+.popup .icon{
+  -fx-image: url('Store_001_32px.png');
+  -fx-background-size: auto;
+  //-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 6, 0.5, 2.0, 3.0);
+}
+.popup .close{
+  -fx-padding: 0px;
+  -fx-content-display:graphic-only;
+  -fx-graphic: url('close_01.png');
+  -fx-background-size: auto;
+  -fx-background-color: derive(-fx-base,-80%);
+  -fx-background-radius: 3px;
+  -fx-border-radius: 3px;
+  -fx-border-color: derive(-fx-base,-90%);
+}
+.popup .close:hover{
+  -fx-background-color: #800000;
+}
